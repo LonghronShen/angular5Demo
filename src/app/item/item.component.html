@@ -1,0 +1,8 @@
+<form  [formGroup]="itemForm" (submit)="SubmitData()">
+   <div>
+     <label>标题</label><input formControlName="Title" type="text">
+     <label>内容</label><input formControlName="Text" type="text">
+     <label>描述</label><input formControlName="Description" type="text">
+   </div>
+   <button  type="submit">提交数据</button>
+</form>

@@ -1,0 +1,15 @@
+<a routerLink="/ItemComponent">添加数据</a>
+<div>
+  <table>
+    <tr>
+      <td>标题</td>
+      <td>内容</td> <td>描述</td>
+    </tr>
+    <tr *ngFor="let item of items" >
+      <td>{{item.title}}</td>
+      <td>{{item.text}}</td>
+      <td>{{item.description}}</td>
+    </tr>
+
+  </table>
+</div>
