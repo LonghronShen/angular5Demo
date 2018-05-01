@@ -51,7 +51,6 @@ export class LoginService {
   }
 
   SetAuth(auth: any): boolean {
-    debugger;
     if (auth) {
       localStorage.setItem(this.authKey, JSON.stringify(auth));
     } else {

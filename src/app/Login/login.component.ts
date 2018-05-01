@@ -30,7 +30,6 @@ export class LoginComponent implements OnInit {
   Login() {
     this.loginService.LoginByUserNameAndPwd(this.loginForm.value.userName, this.loginForm.value.userPwd)
       .subscribe((response) => {
-        debugger;
         if (response['IsSuccess'] === true) {
           if (response['Token'] != null) {
             const token = JSON.parse(response['Token']);
